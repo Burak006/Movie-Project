@@ -1,0 +1,27 @@
+<div class="container-lg bg-black">
+
+  <div class="form-group">
+   
+    <input type="text" class="form-control" id="carSearch" placeholder="Film adı, dizi adı, imdb... "
+      style="width: 500px; margin: auto; margin-top: 20px;" [(ngModel)]="filterText" />
+ 
+    </div>
+
+  <ul class="row">
+
+    <h3 class="text-white">Yeni Filmler</h3>
+    <li class="col-md-2" *ngFor="let data of movie | movieSearch: filterText">
+      <div class="card card-profile card-plain">
+        <div class="card-body text-center bg-white shadow border-radius-lg p-3" style="width: 140px; height: 264px;">
+          <a href="javascript:;">
+            <img routerLink="details/{{data.id}}" class="w-100 border-radius-md" src="{{data.image}}" style="width: 108px; height: 154.52px;">
+          </a>
+          <h6 class="mt-3 mb-1 d-md-block d-none">{{data.name}}</h6>
+          <p class="mb-1 d-md-none d-block text-sm font-weight-bold text-darker">{{data.name}}</p>
+          <p class="mb-0 text-xs font-weight-bolder text-warning text-gradient text-uppercase">{{data.category}}</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+</div>

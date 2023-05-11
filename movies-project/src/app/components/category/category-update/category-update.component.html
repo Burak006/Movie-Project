@@ -1,0 +1,25 @@
+<p class="text-xs font-weight-bold mb-0">   
+  <a routerLink="/admin/category" title="GERİ"><img src="../../../../assets/img/icons/back.png" style="width: 30px; height: 30px; cursor: pointer;"></a>
+</p>
+  <div style="text-align: center;">
+    <h5 class="title text-white">Kategori Güncelle</h5>
+
+    <form [formGroup]="categoryUpdateForm" *ngIf="categoryUpdateForm">
+      <div class="row">
+        <div class="col-md-6" style="margin: auto;">
+      <div class="form-group">
+          <label for="example-text-input" class="form-control-label text-white">Güncel Kategoriyi Giriniz</label>
+          <input class="form-control" formControlName="name" type="text" value="Güncel Kategoriyi Giriniz" id="example-text-input">
+      </div>
+        </div>
+      </div>
+      <button type="button" class="btn bg-gradient-success" style="margin-right: 10px;" (click)="CategoryUpdate()">Güncelle</button>
+    </form>
+</div>
+ 
+   
+
+
+
+
+  

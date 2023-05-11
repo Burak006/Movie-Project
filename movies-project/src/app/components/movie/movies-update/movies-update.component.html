@@ -1,0 +1,121 @@
+<p class="text-xs font-weight-bold mb-0">   
+  <a routerLink="/admin/movies" title="GERİ"><img src="../../../../assets/img/icons/back.png" style="width: 30px; height: 30px; cursor: pointer;"></a>
+</p>
+<form [formGroup]="movieUpdateForm" *ngIf="createMoviesFrom">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="example-text-input" class="form-control-label text-white">Film Adı</label>
+        <input class="form-control" formControlName="name" type="text"  id="example-text-input">
+    </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="example-text-input" class="form-control-label text-white">Ülke</label>
+        <input class="form-control" formControlName="country" type="text"  id="example-text-input">
+    </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+<div class="form-group">
+    <label for="example-text-input" class="form-control-label text-white">IMDB</label>
+    <input class="form-control" formControlName="imdb" type="number"  id="example-text-input">
+</div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="example-number-input" class="form-control-label text-white">Kategori</label>
+      <input class="form-control" formControlName="category" type="text"  id="example-number-input">
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="example-month-input" class="form-control-label text-white">Yıl</label>
+      <input class="form-control" formControlName="year" type="month"  id="example-month-input">
+  </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="example-month-input" class="form-control-label text-white">Yapım Yılı</label>
+      <input class="form-control" formControlName="Year_of_construction" type="month"  id="example-month-input">
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="example-number-input" class="form-control-label text-white">Film Süresi</label>
+      <input class="form-control" formControlName="duration" type="tetx"  id="example-number-input">
+  </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1" class="form-control-label text-white">Film Konusu</label>
+      <input class="form-control" formControlName="explanation" type="text"  id="exampleFormControlTextarea1">
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+<div class="form-group">
+    <label for="example-text-input" class="form-control-label text-white">Film Resmi</label>
+    <input class="form-control" formControlName="image" type="text"  id="example-text-input">
+</div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="example-number-input" class="form-control-label text-white">Film Videosu</label>
+      <input class="form-control" formControlName="video" type="mp4"  id="example-number-input">
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+<div class="form-group">
+    <label for="example-text-input" class="form-control-label text-white">Oyuncu 1</label>
+    <input class="form-control" formControlName="actors_1" type="text"  id="example-text-input">
+</div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="example-number-input" class="form-control-label text-white">Oyuncu 2</label>
+      <input class="form-control" formControlName="actors_2" type="text"  id="example-number-input">
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+<div class="form-group">
+    <label for="example-text-input" class="form-control-label text-white">Oyuncu 3</label>
+    <input class="form-control" formControlName="actors_3" type="text"  id="example-text-input">
+</div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="example-number-input" class="form-control-label text-white">Oyuncu 4</label>
+      <input class="form-control" formControlName="actors_4" type="text"  id="example-number-input">
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="example-datetime-local-input" class="form-control-label text-white">Güncelleme Tarihi</label>
+      <input class="form-control" formControlName="date_of_update" type="datetime-local" id="example-datetime-local-input">
+  </div>
+  </div>
+</div>
+  
+  
+  <button class="btn btn-fill bg-gradient-success" (click)="MoviesUpdate()">Güncelle</button>
+  </form>
