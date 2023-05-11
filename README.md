@@ -6,4 +6,4 @@
 <img src="https://github.com/Burak006/Movie-Project/assets/116731704/e130f102-20ef-4ecb-b91d-cb9d0da421dc">
 
 <h1>Admin Page</h1>
-<img src="">
+<img src="(https://github.com/Burak006/Movie-Project/assets/116731704/39c7e7b1-7f90-4d82-8b8e-92218388474f">
