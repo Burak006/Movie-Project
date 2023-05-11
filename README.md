@@ -3,7 +3,7 @@
 <h1>Kullanılan Teknolojiler</h1>
 <h4>Angular - TypeScript - JavaScript - Api.Json - HTML 5 - Css 3 - Bootstrap 5<h/4>
 <h1>Home Page</h1>
-<img src="">
+<img src="https://github.com/Burak006/Movie-Project/assets/116731704/e130f102-20ef-4ecb-b91d-cb9d0da421dc">
 
 <h1>Admin Page</h1>
 <img src="">
